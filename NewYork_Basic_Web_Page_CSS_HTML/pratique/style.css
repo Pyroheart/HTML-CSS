@@ -1,0 +1,159 @@
+
+/* *****************************************************************
+GENERALITIES
+***************************************************************** */
+@font-face {
+    font-family: 'courgetteregular';
+    src: url('../instructions/ressources/Courgette-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 18px;
+	color: #444;
+	background-color: white;
+	max-width: 980px;
+	text-align: justify;
+	margin: auto;
+	padding: 5px;
+}
+
+header h1 {
+	text-transform: uppercase;
+}
+
+
+
+/* Le corps du document */
+nav {
+	text-align: left;
+	color: #003884;
+	font-family: 'courgetteregular';
+	font-weight: bold;
+}
+
+
+nav a {
+	text-decoration: none;
+}
+
+
+
+
+
+
+/* Le titre principal d'un flux */
+h1 {
+	font-size: 2.5em;
+	text-align:center;
+	color: #003884;
+	font-family: 'courgetteregular';
+}
+
+#site_Name{
+	font-size: 40px;
+}
+
+/* Le titre de second niveau  */
+h2 {
+	font-size: 35px;
+	color: #4f89b9;
+	text-align:center;
+	font-family: 'courgetteregular';
+}
+
+/* Le titre de troisème niveau */
+h3 {
+	font-size: 25px;
+	text-align:center;
+	color: #003884;
+	font-family: 'courgetteregular';
+}
+
+
+q, em, strong, cite{
+	color: #003884;
+}
+
+
+#quote{
+	text-align: center;
+	background-color: #d7e1ef;
+	font-family: 'courgetteregular'
+}
+
+q{
+	font-size: 25px;
+	font-weight: bold;
+}
+
+
+
+li {
+	text-align: left;
+}
+
+section {
+	overflow:hidden;
+}
+
+article {
+	overflow:hidden;
+}
+
+
+
+
+
+
+
+.image_float_left{
+	float:left;
+}
+
+.image_float_right{
+	float:right;
+}
+
+
+a:visited {
+  color: #003884;
+}
+
+
+
+
+/* *****************************************************************
+MAIN LAYOUT
+***************************************************************** */
+
+/* L'entête de la page */
+.header {
+	text-align: center;
+}
+
+/* Le pied de page */
+.footer {
+	text-align: center;
+}
+
+
+.not_List_Visited_Links:visited {
+	color: #444;
+}
+
+.not_List_Visited_Links{
+	font-size: 14px;
+}
+
+
+/* *****************************************************************
+VARIOUS
+***************************************************************** */
+
+/* Utile pour mettre en évidence un parent */
+.parent {
+	border: 1px dashed #DD5735;
+}
