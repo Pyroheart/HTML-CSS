@@ -1,0 +1,362 @@
+/* *****************************************************************
+TOOLS
+***************************************************************** */
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+* {
+	box-sizing: border-box; /* On spécifie que la largeur (width) de chaque boîte comprend le padding et la bordure (par défaut, c'est seulement la largeur du contenu) */
+}
+
+html {
+	font-size: 62.5%; /* 1rem = 10px (la formule est 10/16*100) la taille par défaut étant 16px */
+}
+
+body {
+	font-size: 1.6rem; /* on remets la taille du texte par défaut pour le body à 16px en utilisant les rem comme unité) */
+}
+
+Img {
+	Max-width: 49%;
+}
+
+
+/* *****************************************************************
+GENERALITIES
+***************************************************************** */
+nav{
+	background-color: #40CCEA;
+	color: white;
+	margin: auto; 
+	padding: 1rem 2em;
+	
+}
+
+nav > a {
+	color: white;
+	margin: auto;
+	padding: 1rem 2em;
+}
+
+
+/* Le corps du document */
+body {
+	margin: 0;
+	padding: 0;
+	line-height: 1.6em;
+	font-family: 'Lato', sans-serif;
+	background-color: white;
+	color: #333;
+}
+
+/* Le titre principal d'un flux */
+h1 {
+	font-size: 4.5rem;
+	color: #40CCEA;
+	line-height: 1.5;
+	padding: 0;
+	font-weight: normal;
+	text-align: center;
+	border-bottom:  1px dashed #40CCEA;
+/*	border-bottom-width: 90%;*/
+	word-spacing: 1rem;
+	width: 90%;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+/* Le titre de second niveau  */
+h2 {
+	font-size: 3.0rem;
+	color: #333;
+	text-transform: uppercase;
+	font-weight: normal;
+	line-height: 1.5;
+	
+}
+
+
+/* Le titre de troisème niveau */
+h3 {
+	font-size: 2.5rem;
+	font-weight: normal;
+	line-height: 1.5;
+}
+
+/* Les liens */
+a {
+	text-decoration: none;
+	color: #0096D0;
+}
+
+/* Ajout d'un élément de décoration au survol */
+a:hover {
+	text-decoration: underline;
+	color: #000;
+}
+
+
+/* *****************************************************************
+CARNET DE VOYAGE
+***************************************************************** */
+
+.floatLeft{
+	float: left;
+	margin-right: 1rem;
+}
+
+.floatRight{
+	float: right;
+	margin-left: 1rem;
+}
+
+.red{
+	color:#F00;
+}
+.ocher {
+	color: #CD8C56;
+}
+
+.buttonMore {
+	color: white;
+	background-color: #0096D0;
+	border-radius: 0.6rem;
+	padding: 1rem;
+	margin-bottom: 2em;
+	display: inline-block;
+}
+
+.borderBottom {
+	padding-bottom: 1.5rem;
+	border-bottom: 0.1rem solid black;
+}
+
+
+
+/* *****************************************************************
+Contenu principal
+***************************************************************** */
+main {
+/*	padding: 2em;*/
+}
+
+/* Les articles */
+article {
+	padding: 0em;
+	margin-bottom: 2.5rem;
+}
+
+.borderBottom {
+	overflow: hidden;
+}
+
+section {
+	margin-bottom: 3rem;
+}
+
+/* *****************************************************************
+TABLEAU
+***************************************************************** */
+tr:nth-child(even) > td {
+    background-color: #eee;
+}
+
+th, td {
+	border: 0.1rem gray solid;
+	padding-left: 0.5rem;
+	height: 6rem;
+}
+
+table, tr, th, td {
+	border-collapse: collapse;
+}
+
+table {
+  width: 100%;
+}
+
+/* *****************************************************************
+ABOUT
+***************************************************************** */
+
+.img-BG-fond{
+	background-image: url("../instructions/ressources/fond.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	padding: 3.0rem 0;
+	
+	/*C'est immonde, penser question sur bandeau complet sans merge les marges*/
+	/*width: 100vw;*/
+ /*   position: relative;*/
+ /*   margin-left: -50vw;*/
+ /*   margin-top: 100px;*/
+ /*   left: 50%;*/
+}
+
+
+#about{
+/*	margin: 1em auto;*/
+	width: 50%;
+	padding: 0.5em 1em;
+	background-color: white;
+	
+}
+
+
+/* *****************************************************************
+FORMULAIRE
+***************************************************************** */
+
+form {
+	background-image: url("../instructions/ressources/map-image.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-color: #444;
+/*	overflow: hidden;*/
+	display: flex;
+	flex-wrap: wrap;
+	padding: 30px;
+}
+
+
+fieldset{
+	width: 50%;
+	margin: 0;
+	border: none;
+	padding: 0;
+
+}
+
+.left {
+	padding-right: 15px;
+}
+
+.right {
+	padding-left: 15px;
+}
+
+.floatRightTextArea {
+/*	float: right;*/
+/*	margin: 2rem 6rem;*/
+	padding: 2rem;
+	width: 100%;
+	border-radius: 6px;
+	resize: vertical;
+}
+
+/*.paddingFormulaire {
+	margin: 1rem;
+}*/
+
+.visually-hidden {
+	position: absolute!important;
+    width: 1px!important;
+    height: 1px!important;
+    padding: 0!important;
+    margin: -1px!important;
+    overflow: hidden!important;
+    clip: rect(0,0,0,0)!important;
+    white-space: nowrap!important;
+    border: 0!important;
+}
+
+.input-group {
+	margin-bottom: 20px;
+}
+
+input {
+	width: 100%;
+	border-radius: 6px;
+	padding: 1.5rem 2rem;
+	border-style: solid;
+}
+
+.toolbar {
+	width: 100%;
+	text-align: center;
+	display: flex;
+    justify-content: center;
+    padding-top: 40px;
+}
+
+button {
+	padding : 1em 2em;
+	font-size: 16px;
+	color: #fff;
+	background-color: #0096D0;
+	border-color: #0096D0;
+	border-radius: 0.5em;
+	border-style: solid;
+}
+
+button:hover, select:hover {
+	text-decoration: none;
+	color: #0096D0;
+	background-color: #fff;
+	cursor: pointer;
+}
+
+/* *****************************************************************
+CONTAINER
+***************************************************************** */
+
+/* Le container permet de limiter la largeur d'un contenu */
+.container {
+	max-width: 90rem; /* On donne une largeur au container */
+	width: 90%;
+	margin: 0 auto; /* On centre son contenu */
+}
+
+/* *****************************************************************
+MAIN LAYOUT
+***************************************************************** */
+
+/* L'entête de la page */
+.header {
+/*	padding: 1em;*/
+	text-align: center;
+	background-color: white;
+	margin: 0;
+}
+
+/* Pas de marge pour le titre pricipal */
+.header h1 {
+	margin: 0;
+}
+
+/* Le pied de page */
+.footer {
+	padding: 2em;
+	text-align: center;
+	color: #fff;
+	background-color: #40CCEA;
+}
+
+.footerLinks{
+	color: white;
+	text-decoration: underline;
+}
+
+/* *****************************************************************
+ICONE
+***************************************************************** */
+#3wa{
+	width: 60px;
+}
+
+
+a > i {
+	font-size: 2em;
+}
+.fa-twitter {
+	color: #00acee;
+}
+.fa-facebook-f {
+	color: #3b5998;
+}
+.fa-pinterest{
+	color: red;
+}
+.fa-square-instagram {
+	color: purple;
+}
